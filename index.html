@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Academic Management System - Student Login</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: white;
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      height: 100vh;
+    }
+    .container {
+      display: flex;
+      gap: 60px;
+      align-items: flex-start;
+      max-width: 1100px;
+      width: 100%;
+    }
+    .left-section {
+      width: 350px;
+      text-align: center;
+    }
+    .logo img {
+      width: 140px;
+      margin-bottom: 10px;
+    }
+    .uni-name {
+      font-family: 'Times New Roman', serif;
+      font-size: 22px;
+      color: #a01a1a;
+      margin: 0;
+      font-weight: 700;
+      line-height: 1.2;
+    }
+    .uni-subtitle {
+      font-family: 'Times New Roman', serif;
+      font-size: 11px;
+      font-weight: 500;
+      margin: 0 0 12px 0;
+      line-height: 1.3;
+    }
+    .login-title {
+      font-weight: 600;
+      font-size: 11px;
+      margin-bottom: 20px;
+      color: black;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      gap: 15px;
+    }
+    label {
+      text-align: left;
+      font-weight: 600;
+      font-size: 13px;
+      color: #555;
+      margin-bottom: 4px;
+    }
+    input[type="text"], input[type="password"] {
+      padding: 8px 12px;
+      font-size: 14px;
+      border: 1px solid #999;
+      border-radius: 2px;
+      outline: none;
+    }
+    input[type="text"]:focus, input[type="password"]:focus {
+      border-color: #633f86;
+    }
+    button {
+      background-color: #633f86;
+      color: white;
+      border: none;
+      padding: 12px;
+      border-radius: 20px;
+      font-weight: 700;
+      cursor: pointer;
+      font-size: 14px;
+    }
+    button:hover {
+      background-color: #532e6f;
+    }
+    .note {
+      font-size: 12px;
+      color: red;
+      margin-top: 5px;
+    }
+
+    .right-section {
+      max-width: 500px;
+      text-align: center;
+    }
+    .right-section h1 {
+      font-family: 'Times New Roman', serif;
+      font-weight: 700;
+      color: #8b0f0f;
+      font-size: 28px;
+      margin-bottom: 12px;
+      text-align: center;
+    }
+    .right-section h2 {
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      color: #2e654a;
+      font-style: italic;
+      font-weight: 600;
+      font-size: 20px;
+      margin-bottom: 15px;
+    }
+    .images {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+    .images img {
+      max-height: 220px;
+      object-fit: contain;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="left-section">
+      <div class="logo">
+        <img src="3880a05d-e2f7-46fd-a96e-be5e54f90da2.png" alt="Vel Tech Logo" />
+      </div>
+      <h1 class="uni-name">Vel Tech</h1>
+      <p class="uni-subtitle">
+        Rangarajan Dr. Sagunthala <br/>
+        R&D Institute of Science and Technology<br/>
+        <small>(Deemed to be University Estd. u/s 3 of UGC Act, 1956)</small>
+      </p>
+      <p class="login-title">STUDENT LOGIN</p>
+      <form>
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" placeholder="Enter username" required />
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Enter password" required />
+        <button type="submit">LET'S GO</button>
+      </form>
+      <p class="note">For Students, use VTU/VTA/VTP number as user</p>
+    </div>
+
+    <div class="right-section">
+      <h1>ACADEMIC MANAGEMENT SYSTEM</h1>
+      <h2>STUDENT LOGIN</h2>
+      <div class="images">
+        <img src="https://i.postimg.cc/8cQMrFZ0/stack-books-graduation-cap.png" alt="Stack of Books Graduation" />
+        <img src="https://i.postimg.cc/GtG4dL53/academic-books.png" alt="Academic Books" />
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
